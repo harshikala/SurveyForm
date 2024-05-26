@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Internship Feedback Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Post-Internship Feedback Survey</h1>
+    <p id="description">We value your feedback and would like to hear about your experiences during your web development internship. Your insights will help us improve our internship program and provide better opportunities for future interns.</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" placeholder="Enter your age" min="18" max="100" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Internship Experience</legend>
+            <label for="dropdown">How would you rate your overall internship experience?</label>
+            <select id="dropdown">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+                <option value="very-poor">Very Poor</option>
+            </select>
+
+  <legend>How satisfied are you with the quality of training and guidance you received?</legend>
+  <div class="inline">
+    <label><input type="radio" name="training" value="very-satisfied" class="inline" checked required> Very Satisfied</label>
+    <label><input type="radio" name="training" value="satisfied" class="inline" required> Satisfied</label>
+    <label><input type="radio" name="training" value="neutral" class="inline" required> Neutral</label>
+    <label><input type="radio" name="training" value="dissatisfied" class="inline" required> Dissatisfied</label>
+    <label><input type="radio" name="training" value="very-dissatisfied" class="inline" required> Very Dissatisfied</label>
+  </div>
+
+  <legend>Which skills did you develop during your internship?
+      <h5>(Select all that apply)</h5>
+  </legend>
+  <div class="inline">
+    <label><input type="checkbox" name="skills" value="html"> HTML</label>
+    <label><input type="checkbox" name="skills" value="css"> CSS</label>
+    <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+    <label><input type="checkbox" name="skills" value="react"> React</label>
+    <label><input type="checkbox" name="skills" value="nodejs"> Node.js</label>
+  </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="center-textarea">Additional Comments</legend>
+            <label for="comments"></label>
+            <textarea id="comments" name="comments" rows="4" cols="40" class="comment" placeholder="Your comments" ></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
